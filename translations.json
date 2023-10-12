@@ -1,0 +1,67 @@
+{
+    "cylinder": {
+        "settings": {
+            "title": "Find a cylinder",
+            "subtitle": "Start your configuration by finding a cylinder. Choose a convenient way to find one or more cylinders below.",
+            "main": {
+                "application": {
+                    "title": "Based on application"
+                },
+                "calculation": {
+                    "title": "Calculate capacity"
+                },
+                "existing": {
+                    "title": "I already have a cylinder"
+                }
+            },
+            "application": {
+                "title": "Choose lifting or pulling",
+                "lifting": {
+                    "title": "Lifting",
+                    "cylinder": {
+                        "title": "Cylinder"
+                    },
+                    "wedges": {
+                        "title": "Wedges"
+                    },
+                    "toe_jacks": {
+                        "title": "Toe jacks"
+                    }
+                },
+                "pulling": {
+                    "title": "Pulling",
+                    "pulling_jack": {
+                        "title": "Pulling jack"
+                    },
+                    "hollow_cylinder": {
+                        "title": "Hollow cylinder"
+                    }
+                }
+            },
+            "calculation": {
+                "weight": {
+                    "title": "Please fill in below details",
+                    "subtitle": "we will calculate the capacity for you",
+                    "label": "What is the weight of the object?",
+                    "placeholder": "Weight"
+                },
+                "symmetry": {
+                    "title": "What is the type of load",
+                    "symmetrical": {
+                        "title": "Symmetrical"
+                    },
+                    "asymmetrical": {
+                        "title": "Asymmetrical"
+                    }
+                },
+                "liftingpoints": {
+                    "label": "What is the number of lifting points?",
+                    "placeholder": "Number of lifting points"
+                }
+            },
+            "existing": {
+                "subtitle": "You might already have one or more cylinder from Holmatro. When you select the specific cylinder in the next step, we will guide you towards the rest of your setup."
+            }
+        }
+    }
+}

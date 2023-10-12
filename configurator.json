@@ -1,0 +1,217 @@
+{
+  "category": "cylinder",
+  "type": "settings",
+  "id": "cylinder.settings",
+  "title": "cylinder.settings.title",
+  "subtitle": "cylinder.settings.subtitle",
+  "content": [
+      {
+          "id": "cylinder.settings.main",
+          "title": null,
+          "subtitle": null,
+          "type": "choice",
+          "condition": null,
+          "meta": {
+              "type": "button",
+              "choices": [
+                  {
+                      "title": "cylinder.settings.main.application.title",
+                      "img": null,
+                      "value": "application"
+                  },
+                  {
+                      "title": "cylinder.settings.main.calculation.title",
+                      "img": null,
+                      "value": "calculation"
+                  },
+                  {
+                      "title": "cylinder.settings.main.existing.title",
+                      "img": null,
+                      "value": "existing"
+                  }
+              ]
+          }
+      },
+      {
+          "id": "cylinder.settings.application",
+          "title": "cylinder.settings.application.title",
+          "subtitle": null,
+          "type": "choice",
+          "condition": {
+              "type": "equals",
+              "field": "cylinder.settings.main",
+              "value": "application"
+          },
+          "meta": {
+              "type": "button",
+              "choices": [
+                  {
+                      "title": "cylinder.settings.application.lifting.title",
+                      "img": null,
+                      "value": "lifting"
+                  },
+                  {
+                      "title": "cylinder.settings.application.pulling.title",
+                      "img": null,
+                      "value": "pulling"
+                  }
+              ]
+          }
+      },
+      {
+          "id": "cylinder.settings.application.lifting",
+          "title": null,
+          "subtitle": null,
+          "type": "choice",
+          "condition": {
+              "type": "and",
+              "conditions": [
+                  {
+                      "type": "equals",
+                      "field": "cylinder.settings.main",
+                      "value": "application"
+                  },
+                  {
+                      "type": "equals",
+                      "field": "cylinder.settings.application",
+                      "value": "lifting"
+                  }
+              ]
+          },
+          "meta": {
+              "type": "button",
+              "choices": [
+                  {
+                      "title": "cylinder.settings.application.lifting.cylinder.title",
+                      "img": "https://www.holmatro.com/sites/default/files/styles/product_main_image/public/products/886af58e-ae81-4efb-bcf7-14f65a07d851/images/multi-purpose-cylinders-en-507c56d2-f441-419a-b8da-b6e48d7b8a93-E0004820.jpg?itok=TxwjQFK0",
+                      "value": "cylinder"
+                  },
+                  {
+                      "title": "cylinder.settings.application.lifting.wedges.title",
+                      "img": "https://www.holmatro.com/sites/default/files/styles/product_main_image/public/products/886af58e-ae81-4efb-bcf7-14f65a07d851/images/multi-purpose-cylinders-en-507c56d2-f441-419a-b8da-b6e48d7b8a93-E0004820.jpg?itok=TxwjQFK0",
+                      "value": "wedges"
+                  },
+                  {
+                      "title": "cylinder.settings.application.lifting.toe_jacks.title",
+                      "img": "https://www.holmatro.com/sites/default/files/styles/product_main_image/public/products/886af58e-ae81-4efb-bcf7-14f65a07d851/images/multi-purpose-cylinders-en-507c56d2-f441-419a-b8da-b6e48d7b8a93-E0004820.jpg?itok=TxwjQFK0",
+                      "value": "toe_jacks"
+                  }
+              ]
+          }
+      },
+      {
+          "id": "cylinder.settings.application.pulling",
+          "title": null,
+          "subtitle": null,
+          "type": "choice",
+          "condition": {
+              "type": "and",
+              "conditions": [
+                  {
+                      "type": "equals",
+                      "field": "cylinder.settings.main",
+                      "value": "application"
+                  },
+                  {
+                      "type": "equals",
+                      "field": "cylinder.settings.application",
+                      "value": "pulling"
+                  }
+              ]
+          },
+          "meta": {
+              "type": "button",
+              "choices": [
+                  {
+                      "title": "cylinder.settings.application.pulling.pulling_jack.title",
+                      "img": "https://www.holmatro.com/sites/default/files/styles/product_main_image/public/products/886af58e-ae81-4efb-bcf7-14f65a07d851/images/multi-purpose-cylinders-en-507c56d2-f441-419a-b8da-b6e48d7b8a93-E0004820.jpg?itok=TxwjQFK0",
+                      "value": "pulling_jack"
+                  },
+                  {
+                      "title": "cylinder.settings.application.pulling.hollow_cylinder.title",
+                      "img": "https://www.holmatro.com/sites/default/files/styles/product_main_image/public/products/886af58e-ae81-4efb-bcf7-14f65a07d851/images/multi-purpose-cylinders-en-507c56d2-f441-419a-b8da-b6e48d7b8a93-E0004820.jpg?itok=TxwjQFK0",
+                      "value": "hollow_cylinder"
+                  }
+              ]
+          }
+      },
+      {
+          "id": "cylinder.settings.calculation.weight",
+          "title": "cylinder.settings.calculation.weight.title",
+          "subtitle": "cylinder.settings.calculation.weight.subtitle",
+          "type": "input",
+          "condition": {
+              "type": "equals",
+              "field": "cylinder.settings.main",
+              "value": "calculation"
+          },
+          "meta": {
+              "type": "integer",
+              "placeholder": "cylinder.settings.calculation.weight.placeholder",
+              "label": "cylinder.settings.calculation.weight.label",
+              "range": {
+                  "min": 1,
+                  "max": 1000
+              }
+          }
+      },
+      {
+          "id": "cylinder.settings.calculation.symmetry",
+          "title": "cylinder.settings.calculation.symmetry.title",
+          "subtitle": null,
+          "type": "choice",
+          "condition": {
+              "type": "equals",
+              "field": "cylinder.settings.main",
+              "value": "calculation"
+          },
+          "meta": {
+              "type": "button",
+              "choices": [
+                  {
+                      "title": "cylinder.settings.calculation.symmetry.symmetrical.title",
+                      "img": "https://www.holmatro.com/sites/default/files/styles/product_main_image/public/products/886af58e-ae81-4efb-bcf7-14f65a07d851/images/multi-purpose-cylinders-en-507c56d2-f441-419a-b8da-b6e48d7b8a93-E0004820.jpg?itok=TxwjQFK0",
+                      "value": "symmetrical"
+                  },
+                  {
+                      "title": "cylinder.settings.calculation.symmetry.asymmetrical.title",
+                      "img": "https://www.holmatro.com/sites/default/files/styles/product_main_image/public/products/886af58e-ae81-4efb-bcf7-14f65a07d851/images/multi-purpose-cylinders-en-507c56d2-f441-419a-b8da-b6e48d7b8a93-E0004820.jpg?itok=TxwjQFK0",
+                      "value": "asymmetrical"
+                  }
+              ]
+          }
+      },
+      {
+          "id": "cylinder.settings.calculation.liftingpoints",
+          "title": null,
+          "subtitle": null,
+          "type": "input",
+          "condition": {
+              "type": "equals",
+              "field": "cylinder.settings.main",
+              "value": "calculation"
+          },
+          "meta": {
+              "type": "integer",
+              "placeholder": "cylinder.settings.calculation.liftingpoints.placeholder",
+              "label": "cylinder.settings.calculation.liftingpoints.label",
+              "range": {
+                  "min": 1,
+                  "max": null
+              }
+          }
+      },
+      {
+          "id": "cylinder.settings.existing",
+          "title": null,
+          "subtitle": "cylinder.settings.existing.subtitle",
+          "type": null,
+          "condition": {
+              "type": "equals",
+              "field": "cylinder.settings.main",
+              "value": "existing"
+          },
+          "meta": {}
+      }
+  ]
+}
