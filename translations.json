@@ -63,5 +63,81 @@
                 "subtitle": "You might already have one or more cylinder from Holmatro. When you select the specific cylinder in the next step, we will guide you towards the rest of your setup."
             }
         }
+    },
+    "pump": {
+        "settings": {
+            "title": "Find a pump",
+            "subtitle": "Choose a convenient way to find a pump below.",
+            "type": {
+                "hand": {
+                    "title": "Hand pump"
+                },
+                "compact": {
+                    "title": "Compact pump"
+                },
+                "vari": {
+                    "title": "Vari pump (Electric / Petrol)"
+                },
+                "existing": {
+                    "title": "I already have a pump"
+                }
+            },
+            "hand": {
+                "valve": {
+                    "title": "Do you need a valve?",
+                    "no": {
+                        "title": "No"
+                    },
+                    "yes": {
+                        "title": "Yes"
+                    }
+                },
+                "gauge": {
+                    "title": "Do you need a gauge set?",
+                    "no": {
+                        "title": "No"
+                    },
+                    "yes": {
+                        "title": "Yes"
+                    }
+                }
+            },
+            "compact": {
+                "title": "Compact pump",
+                "power": {
+                    "electric": {
+                        "title": "230 Volts"
+                    },
+                    "air": {
+                        "title": "Air"
+                    }
+                },
+                "electric": {
+                    "gauge": {
+                        "title": "Which gauge set do you need?",
+                        "gaugeonly": {
+                            "title": "Gauge set"
+                        },
+                        "gaugeandneedle": {
+                            "title": "Gauge set + needle valve"
+                        },
+                        "nogauge": {
+                            "title": "No gauge set and needle valve needed"
+                        }
+                    }
+                },
+                "air": {
+                    "gauge": {
+                        "title": "Do you need a gauge set?"
+                    }
+                }
+            },
+            "vari": {
+                "title": "Vari pump"
+            },
+            "existing": {
+                "title": "I already have a pump"
+            }
+        }
     }
 }
