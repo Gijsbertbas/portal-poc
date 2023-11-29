@@ -137,7 +137,25 @@
             },
             "existing": {
                 "title": "I already have a pump"
+            },
+            "acting": {
+                "title": "Find a pump",
+                "plurality": {
+                    "title": "What is the type of pump?",
+                    "single": {
+                        "title": "Single acting"
+                    },
+                    "double": {
+                        "title": "Double acting"
+                    }
+                }
+            },
+            "numberofpumps": {
+                "title": "How many pumps do you need?"
             }
+        }, 
+        "productlist": {
+            "title": "Select a pump"
         }
     }
 }

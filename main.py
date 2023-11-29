@@ -95,13 +95,10 @@ with tab1:
                         st.text(f"{product['name']} - {product['article_number']}")
                 if c["type"] == "filters":
                     st.subheader("Filters:")
-                    if "category" in c["meta"]["filters"]:
-                        st.text(f"Category: {c['meta']['filters']['category']}")
-                    if (
-                        "filters" in c["meta"]["filters"]
-                        and c["meta"]["filters"]["filters"]
-                    ):
-                        for k, v in c["meta"]["filters"]["filters"].items():
+                    if "category" in c["meta"]:
+                        st.text(f"Category: {c['meta']['category']}")
+                    if c["meta"]["filters"]:
+                        for k, v in c["meta"]["filters"].items():
                             st.text(f"{k}: {v}")
 
         with st.sidebar:
