@@ -179,9 +179,11 @@ class PortalCLient:
         return response.json()
 
     def get_products(self, filters: dict):
+        if not isinstance(filters, dict):
+            filters = {}
         data = {"filters": filters}
         response = requests.post(
-            f"{self.base_url}/products",
+            f"{self.base_url}/products/",
             headers={"Authorization": f"Bearer {self.token}"},
             json=data,
         )

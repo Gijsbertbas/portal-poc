@@ -92,7 +92,7 @@ with tab1:
                 if c["type"] == "products":
                     st.subheader("Products:")
                     for product in c["meta"]["products"]:
-                        st.text(f"{product['name']} - {product['article_number']}")
+                        st.text(f"{product['name']} - {product['article_number']} - {product['product_id']}")
                 if c["type"] == "filters":
                     st.subheader("Filters:")
                     if "category" in c["meta"]:
